@@ -1,10 +1,10 @@
-import sys
-from sys import argv
-from struct import *
+# import sys
+# from sys import argv
 
 import shutil
+from struct import *
 
-def compression(ipt):
+def compression(ipt, fileName):
     input_file = ipt
     n = 64
     maximum_table_size = pow(2,int(n))      
@@ -30,20 +30,17 @@ def compression(ipt):
     if string in dictionary:
         compressed_data.append(dictionary[string])
 
-    out = input_file.split(".")[0]
-    output_file = open(out + ".lzw", "wb")
+    # out = input_file.split(".")[0]
+    output_file = open(fileName + ".lzw", "wb")
     for data in compressed_data:
         output_file.write(pack('>H',int(data)))
         
     output_file.close()
     file.close()
 
-    current_path = "./.lzw"
-    new_path = "./compressed/.lzw"
+    current_path = "./" + fileName + ".lzw"
+    new_path = "./compressed/" + fileName + ".lzw"
 
     shutil.move(current_path, new_path)
-
-    # file_path = "./upload/" + output_file.name
-    # file.save(file_path)
 
     return "Success"

@@ -7,15 +7,24 @@ app = Flask(__name__)
 def homepage():
     return render_template('index.html')
 
-@app.route('/', methods=['POST'])
-def uploaded():
+@app.route('/compress', methods=['POST'])
+def compress():
     # -- uploaded file setup
     file = request.files['fileInput']
     file_path = "./upload/" + file.filename
     file.save(file_path)
 
     # -- compression setup
-    compression(file_path)
+    get_name = file.filename.split(".")[0]
+    compression(file_path, get_name)
+
+    return render_template('index.html')
+
+@app.route('/uncompress', methods=['GET'])
+def uncompress():
+    # -- get compressed file path
+
+    # -- decompression setup
 
     return render_template('index.html')
 

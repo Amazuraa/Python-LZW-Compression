@@ -1,4 +1,4 @@
-## LZW-Compression (On Development!) <hr>
+## LZW-Compression (On Development!)
 
 #### Prerequisites : 
 

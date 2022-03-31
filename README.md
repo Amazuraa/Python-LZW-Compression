@@ -17,3 +17,4 @@
 
 &nbsp;&nbsp;&nbsp; (-) &nbsp; Compress only .txt file <br/>
 &nbsp;&nbsp;&nbsp; (-) &nbsp; File name missing after compression <br/>
+&nbsp;&nbsp;&nbsp; (-) &nbsp; Decoder haven't work yet <br/>

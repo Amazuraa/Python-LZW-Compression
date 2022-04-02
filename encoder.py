@@ -30,7 +30,6 @@ def compression(ipt, fileName):
     if string in dictionary:
         compressed_data.append(dictionary[string])
 
-    # out = input_file.split(".")[0]
     output_file = open(fileName + ".lzw", "wb")
     for data in compressed_data:
         output_file.write(pack('>H',int(data)))
@@ -38,6 +37,7 @@ def compression(ipt, fileName):
     output_file.close()
     file.close()
 
+    # -- move to directory
     current_path = "./" + fileName + ".lzw"
     new_path = "./compressed/" + fileName + ".lzw"
 

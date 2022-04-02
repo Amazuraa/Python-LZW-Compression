@@ -2,9 +2,10 @@
 # import struct
 # from sys import argv
 
+import shutil
 from struct import *
 
-def Uncompress(ipt):
+def Decompression(ipt, fileName):
     input_file = ipt
     n = 64
     maximum_table_size = pow(2,int(n))
@@ -33,12 +34,18 @@ def Uncompress(ipt):
             next_code += 1
         string = dictionary[code]
 
-    out = input_file.split(".")[0]
-    output_file = open(out + "_decoded.txt", "w")
+    fileName = fileName.split(".")[0]
+    output_file = open(fileName + "_decoded.txt", "w")
     for data in decompressed_data:
         output_file.write(data)
         
     output_file.close()
     file.close()
 
-    return "Success"
+    # -- move to directory
+    current_path = "./" + fileName + "_decoded.txt"
+    new_path = "./decompressed/" + fileName + "_decoded.txt"
+
+    shutil.move(current_path, new_path)
+
+    return new_path

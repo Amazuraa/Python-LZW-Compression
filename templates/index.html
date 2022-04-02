@@ -31,6 +31,34 @@
                 </form>
             </div>
         </div>
+        <div class="card m-5 p-3">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="text-center">#</th>
+                        <th scope="col">File Name &nbsp;|&nbsp; Compressed</th>
+                        <th scope="col">File Size</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                    </thead>
+                    {% if files %}
+                    {% for list in files %}
+                        <tr>
+                            <td class="text-center">{{ loop.index }}</td>
+                            <td>{{ list[0] }}</td>
+                            <td>{{ list[1] }}</td>
+                            <td>
+                                <button class="btn btn-success btn-sm">Decompress</button>
+                                <a class="btn btn-secondary btn-sm"
+                                   href="/delete/{{ list[0] }}">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    {% endif %}
+                </table>
+            </div>
+        </div>
     </div>
     <!-- </div> -->
 </body>

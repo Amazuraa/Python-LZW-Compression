@@ -15,6 +15,6 @@
 
 &nbsp;&nbsp;&nbsp; ![lzw-compression](https://user-images.githubusercontent.com/37819857/161403859-99436b4b-f432-48bd-83b7-2d5ef8f1ce3c.gif)
 
-#### &nbsp; Known Issue : 
+#### &nbsp; Limitation : 
 
 &nbsp;&nbsp;&nbsp; (-) &nbsp; Compress only .txt file <br/>

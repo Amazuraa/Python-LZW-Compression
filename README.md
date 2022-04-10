@@ -1,17 +1,21 @@
-## LZW-Compression (On Development!)
+## LZW-Compression
 
 #### &nbsp; Prerequisites : 
 
-&nbsp;&nbsp;&nbsp; (+) &nbsp; Install Python <br/>
-&nbsp;&nbsp;&nbsp; (+) &nbsp; Install Flask <br/>
+```bash
+Install Python
+```
+
+```bash
+pip install flask  <- or ->  py -m pip install flask
+```
 
 #### &nbsp; How to Use : 
 
 &nbsp;&nbsp;&nbsp; (+) &nbsp; Clone this repository <br/>
 &nbsp;&nbsp;&nbsp; (+) &nbsp; Go to file <br/>
-&nbsp;&nbsp;&nbsp; (+) &nbsp; Type -> <b><i>py app.py</i></b> &nbsp; (new version) <br/>
-&nbsp;&nbsp;&nbsp; (+) &nbsp; Or -> <b><i>python app.py</i></b> &nbsp; (older version) <br/>
-&nbsp;&nbsp;&nbsp; (+) &nbsp; On browser localhost port -> <b><i>127.0.0.1:3000</i></b> <br/>
+&nbsp;&nbsp;&nbsp; (+) &nbsp; Type ```  py app.py  <- or ->  python app.py  ```<br/>
+&nbsp;&nbsp;&nbsp; (+) &nbsp; On browser ```  127.0.0.1:3000  ```<br/>
 
 &nbsp;&nbsp;&nbsp; ![lzw-compression](https://user-images.githubusercontent.com/37819857/161403859-99436b4b-f432-48bd-83b7-2d5ef8f1ce3c.gif)
 

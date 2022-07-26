@@ -21,6 +21,18 @@ def get_file_list():
 
     return fileList
 
+def get_file_size(name):
+    size = getsize("./compressed/" + name)
+
+    # -- count size
+    size_name = ("B", "KB", "MB", "GB")
+    j = int(math.floor(math.log(size, 1024)))
+    p = math.pow(1024, j)
+    s = round(size / p, 2)
+
+    res = "%s %s" % (s, size_name[j])
+    return res
+
 def remove_file(name):
     remove("./compressed/" + name)
     return "Success"

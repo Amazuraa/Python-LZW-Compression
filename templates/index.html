@@ -46,13 +46,13 @@
                     {% for list in files %}
                         <tr>
                             <td class="text-center">{{ loop.index }}</td>
-                            <td>{{ list[0] }}</td>
                             <td>{{ list[1] }}</td>
+                            <td>{{ list[2] }}</td>
                             <td>
                                 <a class="btn btn-success btn-sm"
-                                   href="/uncompress/{{ list[0] }}">Decompress</a>
+                                   href="/uncompress/{{ list[1] }}">Decompress</a>
                                 <a class="btn btn-secondary btn-sm"
-                                   href="/delete/{{ list[0] }}">Delete</a>
+                                   href="/delete/{{ list[1] }}">Delete</a>
                             </td>
                         </tr>
                     {% endfor %}

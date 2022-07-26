@@ -17,6 +17,8 @@ py -m pip install pymysql
 #### &nbsp; How to Use : 
 
 &nbsp;&nbsp;&nbsp; (+) &nbsp; Clone this repository <br/>
+&nbsp;&nbsp;&nbsp; (+) &nbsp; Setup db in model <br/>
+&nbsp;&nbsp;&nbsp; (+) &nbsp; Import table <br/>
 &nbsp;&nbsp;&nbsp; (+) &nbsp; Go to file <br/>
 &nbsp;&nbsp;&nbsp; (+) &nbsp; Type ```  py app.py  ```<br/>
 &nbsp;&nbsp;&nbsp; (+) &nbsp; On browser ```  127.0.0.1:3000  ```<br/>
